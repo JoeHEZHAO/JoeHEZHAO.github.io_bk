@@ -1,21 +1,124 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8"/>
 	<title></title>
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 </head>
 <body>
-	<div>
-		<img src="/static/logo_V1.gif">
-		<p>HE ZHAO</p>
-		 <!-- TODO:bici2 lab logo -->
-		 <!-- TODO:lab introduction -->
-		 <!-- TODO:self video demo -->
+  <div id="container" style="width: 80%;height: 100%;margin-left: auto;margin-right: auto;">
+	<!-- logo div starts -->
+	<div id="logo">
+		<div style="display: inline-block;">
+			<img src="./static/logo_V1.gif" width="200" height="100">
+		</div>
+		
+		<div style="display: inline-block; float: right;">
+			<span><img src="./static/UF.gif" width="150" height="40"></span>
+			<span><img src="./static/UF_Seal.gif" width="80" height="80"></span>
+		</div>
  	</div>
+ 	<!-- logo ends -->
 
- 	<p>randomForestDemo.mp4</p>
- 	<video src="./static/IMG_2213.mov" width="640" height="360" autoplay >
- 		Your browser does not support video playback
- 	</video>
+ 	<p>Name: HE ZHAO</p>
+ 	<!-- canvas starts -->
+ 	<div id="canvas" style="text-align: center; width: 100%; display: inline-block;">
+	 	<div id="personalInfo" style="display: inline-block; text-align: left;float: left; width: 50%">
+	 		<div id="Master">
+	 				<span> Eduacation:</span>
+	 				<br>
+ 					<span>University of Florida</span>
+ 					<span style="float: right;">Gainesville, FL, USA</span>
+ 					<ul>
+	 					<li>Master of Science in Computer Science, Graduate School of Liberal Arts and Science</li>
+	 					<li>GPA: 3.94/4.0</li>
+	 				</ul>
+			</div>
+			<div id="Bachelor">
+				<span>ZhengZhou University</span>
+ 				<span style="float: right;">ZhengZhou, China</span>
+ 				<ul>
+ 				<li>Bachelor of Engineering in Communication Engineering</li>
+ 				<li>GPA: 3.50/4.0</li>
+ 				</ul>
+			</div>
+	 	</div>
+
+	 	<div id="researchInterest" style="display: inline-block;text-align: left;">
+	 		Research Interest:
+	 		<ol>
+		 		<li>Computer Vision</li>
+		 		<li>Deep Learning</li>
+		 		<li>Biomedical Image Analysis</li>
+	 		</ol>
+	 		Contact: 
+	 		<ul>
+	 			<li>Email: zhaohe19910930@ufl.edu</li>
+	 			<li>Phone: (+1)352-328-1005 </li>
+	 			<li>Address: 3700 SW 27th, Gainesville</li>
+	 		</ul>
+	 	</div>
+	</div>
+
+
+	<!-- canvas ends -->
+	<hr>
+
+	<div id="content" style="width: 100%; text-align: center;">
+	<span> Deep Convolutional Nerual Network:</span>
+		<table style="width: 100%">
+			<tbody>
+				<tr>
+					<!-- td for img demo -->
+					<td>
+						<img src="./static/426.png" width="250px" height="250px">
+					</td>
+
+					<!-- td for explaination -->
+					<td>
+						<p> Detail: Based on medical image data provided by BICI2 lab, implemented fully connected network, holistically-nested edge detection methods and got a better detection and segmentation effect compared with random forest method. Now working on residual neural network to achieve better result and keep digging on deep learning.
+						</p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<span> Muscle Cell Segmentation:</span>
+		<table style="width: 100%">
+			<tbody>
+				<tr>
+					<!-- td for img demo -->
+					<td>
+						<img src="./static/426.png" width="250px" height="250px">
+					</td>
+
+					<!-- td for explaination -->
+					<td>
+						<p> Developed a cpp software implementation of an image segmentation algorithm based on Random Forest Machine Learning algorithm, for Muscle Cell Image gathered from University of Florida Shands Hospital. Combined with Histogram Segmentation algorithm for feature extraction, Watershed  and self-defined Hierarchical segmentation framework for segmentation, this cpp dll-call software works quite well for our muscle cell data. Video demo can be seen soon online.</p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<span> LBP face recognition and DMP object tracking:</span>
+		<table style="width: 100%">
+			<tbody>
+				<tr>
+					<!-- td for img demo -->
+					<td>
+						<img src="./static/426.png" width="250px" height="250px">
+					</td>
+
+					<!-- td for explaination -->
+					<td>
+						<p> Built a Local Binary Patterns based software for face recogition, together with Deformable Part Model for object tracking. Implementation these two effective algorithms for contruction site videos with the aim to prevent from stranger invading and  fire-fighting equipments stealing. Now we are heading towards implementing MOT on large-scale construction site video to monitor multiple objects. Video demo can be seen soon online.</p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+
+   </div>
 </body>
 </html>
