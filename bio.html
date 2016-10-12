@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CAP 5510 Group Project</title>
+
+<style>
+
+html{
+  height: 100%;
+}
+body {
+  min-height: 100%;
+}
+
+div{
+    border-radius:10px;
+}
+
+#index1{
+	
+	position:absolute;
+	width:98.8%;
+	margin-top: -20px;
+
+	background-color: #668284;
+	margin-bottom: 10px;
+    }
+#name{
+	margin-left: 10px;
+	padding-top: 5px;
+	margin-top:15px;
+	font-size: 20px;
+	font-family: Verdana, sans-serif;
+	color: #ffffff;
+    }
+
+    
+#introduction{
+	position: absolute;
+	height: 300%;
+	background-color: #F4EBC3;
+	width: 70%;
+    position: absolute;
+    top: 17.5%;
+    left: 15%;
+
+    }
+
+#introduction h2{
+    margin-left: 5px;
+	margin-right: 5px;
+	margin-top: -10px;
+	font-family:serif;
+	color: #000000;
+	font-size:20px;
+	font-weight:bold;
+    }
+
+h1{	margin-left: 5px;
+	margin-bottom: 15px;
+	font-family: Garamond;
+	font-size:22px
+    }
+    
+h2 a{
+    text-decoration:line;
+    color: #000000;
+    }
+ul{
+    list-style-type: square
+  }
+</style>
+</head>
+<body>
+	<div id="container" style="background-color: white; width: 100%;height: 100%;position: absolute;">
+	  <div id="index1" style="text-align : center;width: 70%; position: absolute;left: 15%;">
+		  <p id="name" >
+		  	Comparison and analysis of various MSA (Multiple Sequence Alignment) development tools.
+		  </p>
+	  </div>
+
+	  <div id="introduction">
+	  	<h1>Group Members</h1>
+
+			<ul style = "text-indent: 15px;">
+				<li>Hanwei Wang</li>
+				<li>He Zhao</li>
+				<li>Bingran Li</li>
+			</ul>
+
+		<h1>What is Multiple Sequence Alignment?</h1>
+		    <ol style = "list-style : none; text-indent: 15px;">
+		   		<li>
+		   			<p style="text-align: left;text-indent: 0px">Multiple sequence Alignment is the alignment of 2 or more biological sequences such as protein, DNA or RNA. The input sequences are assumed to have an given N sequences and a scoring scheme for determining the best matches of the letters (where each sequence consists of a series of letters), find the 2 optimal pairing of letters between the sequences. 
+		   			</p>
+		   		</li>
+		    </ol>
+		   <br>
+
+	  <h1>Why multiple alignment?</h1>
+	  	<ol style = "list-style : none; text-indent: 15px;" >
+		  	<li>
+				<p style="text-align: left;text-indent: 0px">
+				The simultaneous alignment of a number of DNA or protein sequences is one of the commonest tasks in bioinformatics, which can be used for phylogenetic analysis inferring a tree, estimating rates of substitution, detection of homology between a newly sequenced gene and an existing gene family prediction of protein structure demonstration of homology in multigene families determination of a consensus sequence.
+				</p>
+
+				<p style="text-align: left;text-indent: 0px">
+				For both the computational biologist and the research biologist, the use of multiple sequence alignment (MSA) programs to simultaneously align multiple sequences of nucleic acids or proteins is very essantial. Successful alignments are used in a number of applications, such as (1) phylogenetic analysis, as a predictor of evolutionary relationships; (2) identifying conserved motifs and domains within related families of proteins that then may be in ferred to play a role in structure and function; (3) structure prediction, in which the role of a residue in secondary or tertiary structure (e.g. ahelix, bsheet, etc .) is inferred.
+				</p>
+		  	</li>
+		</ol>
+	  <br>
+
+	<h1>How to Implement MSA?</h1>
+	  <ol style = "list-style : none; text-indent: 15px;">
+		  <li>
+			  <p style="text-align: left;text-indent: 0px">
+				  A direct method for producing an MSA uses the <a href="#">dynamic programming technique</a> to identify the globally optimal alignment solution. This method usually involves two sets of parameters: a gap penalty and a substitution matrix assigning scores or probabilities to the alignment of each possible pair of amino acids based on the similarity of the amino acids' chemical properties and the evolutionary probability of the mutation.
+			  </p> 
+
+			  <p style="text-align: left;text-indent: 0px">
+			  	The most widely used approach to multiple sequence alignments uses a heuristic search known as <a href="#">progressive technique</a> (also known as the hierarchical or tree method) developed by Paulien Hogeweg and Ben Hesper in 1984. Progressive alignment builds up a final MSA by combining pairwise alignments beginning with the most similar pair and progressing to the most distantly related. Other methods like <a href="#">Iterative methods</a>, <a href="#">Iterative methods</a>, <a href="#">Consensus methods</a>, <a href="#">Phylogeny-aware methods</a> and <a href="#">Motif finding</a> are also widly used for different purposes.
+			  </p>
+		  </li>
+		</ol>
+	<br>
+
+	<h1>Our Goal</h1>
+	  <ol style = "list-style : none; text-indent: 15px;">
+		  <li>
+			  <p style="text-align: left;text-indent: 0px">
+				  In this project, we review and analyze some of the popular and available MSA programs:MAFFT, CLUSTAL W2, and T-Coffee. We begin by reviewing the general methodologies behind MSA programs, followed by a summary of the four programs listed above. We finish with a comparison and analysis of the presented programs. 
+			  </p> 
+		  </li>
+		</ol>
+	<br>
+	  
+	  <h1>Experiment Procedure</h1>
+
+	  <ol style = "text-indent: 15px; list-style : none;"><li>1. Researching and understanding the MSA algorithms </li><br>
+	  <li>2. Validating the tools and technologies for implementing MSA algorithms </li><br>
+	  <li >3. Compare the following multiple sequence alignment tools:</li> <p style = "text-indent: 30px;">a.)clustalw2 b.)T-coffee c.)MAFFT </p>
+	  <li>4. The data sets of protein sequences we use as input will be both obtained from PDB in FASTA format. </li><br>
+	  <li >5. the experiment will run 50 protein sequences for each method. And compare the accuracy, speed and memory of each program in dealing with the same input sequences. </li><br>
+	  </ol>
+	  <h1>Planned Workload</h1>
+	  <ul style = "text-indent: 15px;"><li>All members find part of the data sets of protein sequence and participate in all the activities.</li>
+	  <li>Hanwei Wang: Use clustalw2 to test the sample, collect and analyze the results. </li>
+	  <li>He Zhao: Use MAFFT to test the sample, collect and analyze the results. </li>
+	  <li>Bingran Li: Use T-coffee to test the sample, collect and analyze the results. </li>
+	  </ul>
+	    <h1>References</h1>
+		<ul style = "text-indent: 15px; list-style : none">
+		<li>[1] Blackshields, G., Wallace, I. M., Larkin, M. and Higgins, D. G. (2006). Analysis and comparison of benchmarks for multiple sequence alignment. In Silico Biology 6: 0300<li>
+		<br>
+		<li>[2] Nuin, P., Wang, Z. and Tillier, E. R. M. The accuracy of several multiple sequence alignment programs for proteins. BMC Bioinformatics 7: 471-488. </li>
+		</ul>
+	  
+	  
+	  		</div>
+		</div>
+	</body>
+</html>
