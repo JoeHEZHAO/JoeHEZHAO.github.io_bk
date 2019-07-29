@@ -5,6 +5,12 @@
 	<title></title>
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="./js/util.js"></script>
+
+	<style>
+    a {
+     text-decoration: none;
+    }
+  </style>
 </head>
 <body>
   <div id="container" style="width: 80%;height: 100%;margin-left: auto;margin-right: auto;">
@@ -14,8 +20,12 @@
 			<img src="./static/icon/york_university.png" width="100" height="100">
 		</div>
 
+		<div style="display: inline-block; float: left;">
+			<img src="./static/icon/vista.png" width="150" height="75">
+		</div>
+
 		<div style="display: inline-block; float: right;">
-			<img src="./static/icon/logo_V1.gif" width="200" height="100">
+			<!-- <img src="./static/icon/logo_V1.gif" width="200" height="100"> -->
 		</div>
 		
 		<div style="display: inline-block; float: right;">
@@ -39,7 +49,7 @@
  				<span style="float: right;">Toronto, Ontario, Canada</span>
  				<ul style="margin-top:0px"	>
  				<li>Department of Engineering Electrical and Computer Science</li>
-                <li>Supervisor: <a href='http://www.cse.yorku.ca/~wildes/' target="blank"> Ricahrd P. Wildes </a> & <a href='vision.eecs.yorku.ca/' > Vision Lab </a></li>
+                <li>Supervisor: <a href='http://www.cse.yorku.ca/~wildes/' target="blank"> Ricahrd P. Wildes </a> & <a href='http://cvr.yorku.ca/' > Centre for Vision Research </a></li>
                 <li> Research Topic: Computer Vision, Video/Action Analysis, Machine Learning
  				</ul>
 			</div>
@@ -87,93 +97,23 @@
 
 	<!-- canvas ends -->
 	<hr>
-
-	<div id="content" style="width: 100%; text-align: center;">
-	<span style="float: left;font-size: 18px;font-weight: bold;color: #000066;"> Deep Convolutional Nerual Network and Segmentation:</span><br><br><br>
-		<table style="width: 100%">
-			<tbody>
-				<tr>
-					<!-- td for img demo -->
-					<td style="width: 72%;">
-						<img src="./static/segmentation.gif" style="width:350px; height:200px;float: left;">
-						<img src="./static/deepLearningWatershed.gif" style="width:350px; height:200px;float: left;">
-						<img src="./static/DeepNetworkArchitect.png" style="width: 710px; height: 310px">
-					</td>
-
-					<!-- td for explaination -->
-					<td>
-						<p> Based on medical image data provided by BICI2 lab, implemented fully connected network edge detection methods with watershad as post-proecess and got a better detection and segmentation effect compared with random forest method. Now working on residual neural network to achieve better result and keep digging on deep learning.
-						</p>
-					</td>
-				</tr>
-			</tbody>
-		</table>
-		<br><br>
-		<hr>
-
-		<span style="float: left;font-size: 18px;font-weight: bold;color: #000066;"> Random Forest Muscle Cell Segmentation:</span><br><br><br>
-		<table style="width: 100%">
-			<tbody>
-				<tr>
-					<!-- td for img demo -->
-					<td style="width: 50%;">
-						<img src="./static/random_forest.gif" width="350px" height="250px">
-					</td>
-
-					<!-- td for explaination -->
-					<td>
-						<p> Developed a cpp software implementation of an image segmentation algorithm based on paper <a href="https://arxiv.org/pdf/1406.5549.pdf" target="_blank">'Fast Edge Detection Using Structured Forests'(Piotr Dollár)</a>, for Muscle Cell Image gathered from University of Florida Shands Hospital. Combined with HOG(Histogram of oriented gradients) for feature extraction, UCM Segmentation algorithm, Watershed and self-defined Hierarchical segmentation framework for segmentation, this cpp dll-call software works quite well for our muscle cell data and totally get rid of matlab dependency.</p>
-					</td>
-				</tr>
-			</tbody>
-		</table>
-		<br><br>
-		<hr>
-
-		<span style="float: left;font-size: 18px;font-weight: bold;color: #000066;"> LBP face recognition and DPM object tracking:</span><br><br><br>
-		<table style="width: 100%">
-			<tbody>
-				<tr>
-					<!-- tr for img demo -->
-					<img src="./static/flagDetection.gif" width="350px" height="250px">
-					<img src="./static/fireEquimentsDetection.gif" width="350px" height="250px">
-						<!-- <img src="./static/FaceRecogntion.gif" width="350px" height="250px"> -->
-				</tr>
-				<br><br>
-					<!-- tr for explaination -->
-				<tr>
-					<p style="text-align: left;"> Built a Local Binary Patterns based software for face recogition, together with Deformable Part Model for object tracking. Implementation these two effective algorithms for contruction site videos with the aim to prevent from stranger invading and  fire-fighting equipments stealing. Now we are heading towards implementing MOT on large-scale construction site video to monitor multiple objects.</p>
-				</tr>
-			</tbody>
-		</table>
-		<br><br>
-		<hr>
-
-		<span style="float: left;font-size: 18px;font-weight: bold;color: #000066;"> Python Flask Online Cell Contour Annotation:</span><br><br><br>
-		<table style="width: 100%">
-			<tbody>
-				<tr>
-					<!-- td for img demo -->
-					<td style="width: 50%;">
-						<img src="./static/onlineAnnotationDemo.gif" width="450px" height="350px">
-					</td>
-
-					<!-- td for explaination -->
-					<td>
-						<p> Using python FLASK framework as back-end to build up a website, which shows our recent accomplishments on Cell-Image Segmentation Research. And allows everyone to modify the contour as groundtruth for further training in deep learning. With Flask's strong server-client interaction functionality, visitors would be able to modify the contour of cell online and re-submit it back to server. To make it more interactive, we use deep zoom package, paper.js and openseadragon as well.</p>
-					</td>
-				</tr>
-			</tbody>
-		</table>
-		<br><br>
-		<hr>
-
-		<div id="ending">
-			<span>Thanks for the support of Prof Yang Lin and all members of BICI2 lab</span>
-			<br><br><br><br>
-		</div>
-
+	<span style="float: left;font-size: 18px;font-weight: bold;color: #000066;"> Recent news:</span><br><br><br>
+	<div id="paper">
+		<span> 2019.07.22:  My paper <b>"Spatiotemporal Feature Residual Propagation for Action Prediction"</b> accepted at <a href='http://iccv2019.thecvf.com/'> ICCV2019 </a>! See you in Seoul. </span>
+		<br> <br>
+		<span> 2018.01.15:  I become a Ph.D. student in <a href='http://vision.eecs.yorku.ca/'> Vision Lab </a> of York University, Canada; Start working with Prof. Richard P. Wildes on Video/Activity Analysis !</span>
 	</div>
+
+	<hr>
+	<span style="float: left;font-size: 18px;font-weight: bold;color: #000066;"> Selected Work:</span><br><br><br>
+	<div id="paper">
+		<span> Coming soon. </span>
+	</div>
+
+
+	<!-- canvas ends -->
+	<hr>
+
 
 
    </div>
